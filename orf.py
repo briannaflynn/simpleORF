@@ -5,7 +5,7 @@ import warnings
 from Bio import BiopythonWarning
 warnings.simplefilter('ignore', BiopythonWarning)
 
-
+# input a DNA sequence as a string, output a list of all possible ORFs
 def orf_tracker(dna:str):
 	
 	dna = Seq(dna)
@@ -55,9 +55,9 @@ def orf_tracker(dna:str):
 
 # input your fasta file here, or manually input a DNA string
 
-record = SeqIO.read("your_fasta.txt", "fasta")
+record = SeqIO.read("your_fasta.fasta", "fasta")
 dna = record.seq
-dna = str(dna)	
+dna = str(dna)
+
 orfs = orf_tracker(dna)
-for o in orfs:
-	print(o)
+

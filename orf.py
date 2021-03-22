@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import sys
 from Bio import SeqIO
 from Bio.Seq import Seq
 import warnings
@@ -55,7 +56,7 @@ def orf_tracker(dna:str):
 
 # input your fasta file here, or manually input a DNA string
 
-record = SeqIO.read("your_fasta.fasta", "fasta")
+record = SeqIO.read(sys.argv[1], "fasta")
 dna = record.seq
 dna = str(dna)
 

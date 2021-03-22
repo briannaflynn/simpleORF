@@ -13,6 +13,14 @@ The function returns a list of all ORFs found. This was created for a simple pro
 
 Clone the repository, and copy over the input fasta file to this directory.
 
+Make sure your fasta file is formatted like so:
+
+```
+>contig_example
+AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG
+
+```
+
 While on the command line, execute the script like so:
 
 ```Bash
@@ -21,3 +29,11 @@ python orf.py my_genome.fasta
 
 The input can be a text file, so long as the text file is formatted like a fasta file. 
 
+The output will be all ORFs found within the fasta file, printed out like this:
+
+```Bash
+MLLGSFRLIPKETLIQVAGSSPCNLS
+M
+MGMTPRLGLESLLE
+MTPRLGLESLLE
+```

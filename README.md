@@ -3,7 +3,7 @@ A simple python script to index all ORFs from a protein sequence
 
 Many of the examples I found on Biostars were overly complicated for this task, and so I hope this simple indexing tool helps. This tool requires that you install biopython, ```pip install biopython```, first.
 
-Biopython is used to generate the translated amino acid sequence from the DNA sequence input from the fasta file, as well as get the translation sequence from its reverse complement strand. From the reading frames generated from these strings, pass a list of reading frames to the sub-function rf2orf, which aggregates the ORFs it finds into a simple list based on whether the sequence contains a start and stop codon.
+Biopython is used to generate the translated amino acid sequence from the DNA sequence input from the fasta file, as well as get the translation sequence from its reverse complement strand. From the reading frames generated from these strings, pass a list of reading frames to the sub-function ```rf2orf```, which aggregates the ORFs it finds into a simple list based on whether the sequence contains a start and stop codon.
 
 Set is used to narrow down the lists to unique ORFs only.
 

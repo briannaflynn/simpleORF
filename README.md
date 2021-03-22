@@ -18,7 +18,6 @@ Make sure your fasta file is formatted like so:
 ```
 >contig_example
 AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG
-
 ```
 
 While on the command line, execute the script like so:

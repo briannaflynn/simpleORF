@@ -1,5 +1,5 @@
 # simpleORF
-A simple python script to index all ORFs from a protein sequence
+A simple python script to index all ORFs from a DNA sequence
 
 Many of the examples I found on Biostars were overly complicated for this task, and so I hope this simple indexing tool helps. This tool requires that you install biopython, ```pip install biopython```, first.
 
